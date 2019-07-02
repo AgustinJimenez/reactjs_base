@@ -1,17 +1,33 @@
 {
-  "name": "erp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
+  "name": "hot-webpack-modern",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack-dev-server --hot",
+    "start-old": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rm -rf node_modules && yarn"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^4.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.0"
   },
   "eslintConfig": {
     "extends": "react-app"
