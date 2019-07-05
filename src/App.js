@@ -1,11 +1,12 @@
-import React from 'react';
-import { hot } from 'react-hot-loader';
+import React from 'react'
+import 'typeface-roboto'
+import Typography from '@material-ui/core/Typography'
+import { hot } from 'react-hot-loader'
 
 const App = () => (
-  <h1>
-    Hello, World<br />
-
-  </h1>
+  <Typography variant="h4" gutterBottom>
+    Hello, World
+  </Typography>
 );
 
 export default hot(module)(App);
